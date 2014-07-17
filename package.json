@@ -1,0 +1,28 @@
+{
+  "name": "empirenode-2014",
+  "description": "Homepage for 2014.empirenode.org",
+  "version": "1.7.2",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/empirejs/2014.empirenode.org.git"
+  },
+  "domains": [
+    "empirenode.com",
+    "empirenode.org",
+    "www.empirenode.com",
+    "www.empirenode.org",
+    "2014.empirenode.com",
+    "2014.empirenode.org"
+  ],
+  "dependencies": {
+    "ecstatic": "0.4.13",
+    "union": "0.3.8"
+  },
+  "scripts": {
+    "start": "./server.js"
+  },
+  "subdomain": "empirenode-2014",
+  "engines": {
+    "node": "v0.8.x"
+  }
+}
