@@ -8,7 +8,7 @@ var is2014 = /2014\./;
 // World's simplest redirect function
 //
 function redirect(res) {
-  var url  = 'http://2014.empirejs.org',
+  var url  = 'http://2014.empirenode.org',
       body = '<p>301. Redirecting to <a href="' + url + '">' + url + '</a></p>';
 
   res.writeHead(301, { 'content-type': 'text/html', location: url });
