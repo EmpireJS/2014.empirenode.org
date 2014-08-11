@@ -25,7 +25,10 @@ var server = union.createServer({
 
     //   res.emit('next');
     // },
-    ecstatic(__dirname + '/public'),
+    ecstatic({
+      root: __dirname + '/public',
+      defaultExt: true
+    }),
     function (req, res) {
       return redirect(res);
     }

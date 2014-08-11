@@ -21,17 +21,21 @@ label {
   color: rgb(174,174,174);
 }
 
-h2 a:hover {
-  background: rgb(200,200,200);
-  padding: 5px 10px;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
+section {
+  margin: 20px 0;
 }
 
 .bold {
   font-style: italic;
   font-weight: bold;
+}
+
+.dark-green {
+  color: #056839;
+}
+
+.light-green {
+  color: #78ba51;
 }
 
 .twitter {
@@ -66,20 +70,14 @@ a:hover.button {
   padding-top: 25px;
 }
 
-#logo-wrap {
-  width: 1024px;
-  margin: auto;
-  margin-bottom: 25px;
-}
-
-#logo-wrap img {
-  text-align: center
-}
-
 #empire-state {
   position: absolute;
   left: 420px;
   top: -20px;
+}
+
+#empire-node {
+  margin-bottom: 20px;
 }
 
 #logo-background {
@@ -89,24 +87,16 @@ a:hover.button {
   background: url(/img/empire-state-cutout.png) center bottom no-repeat;
 }
 
-#logo-big {
-  clear: both;
-  background: url(/img/empire-node-cutout.png) center bottom no-repeat;
-  position: absolute;
-  left: 404px;
-  top: 25px;
-  margin: auto;
-  width: 183px;
-  height: 500px;
-  padding-top: 15px;
-}
-
 #welcome, #action, #why, #contacts {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 #welcome h1, #welcome h2 {
-  text-transform: uppercase;
+  text-align: center;
+}
+
+#welcome h2 {
+  color: #056839;
 }
 
 #welcome h1 > span {
@@ -114,86 +104,42 @@ a:hover.button {
 }
 
 #main {
+  color: #fff;
   position: relative;
-/*  color: #FFF;*/
   font-size: 18px;
   margin: 5px auto 0 auto;
   padding: 15px 0px 12px 10px;
   width: 991px;
 }
 
-#main h1, #main h2 {
+#main h1, #main h2, #main h3 {
+  color: #fff;
+  clear: both;
   font-family: 'Chivo', helvetica, serif;
   font-weight: 700;
-  font-size: 28px;
-  line-height: 12px;
   margin: 0;
-  text-align: center;
-  clear: both;
+  text-transform: uppercase;
 }
 
-#main p.tickets {
-  padding-top: 20px;
-  text-align: center;
+#main h1 {
+  color: #FFF;
+  font-size: 40px;
+  line-height: 48px;
 }
 
-.content {
-  padding-top: 50px;
-  width: 990px;
+#main h2 {
+  font-size: 24px;
+  line-height: 24px;
 }
 
-.content .left {
-  float: left;
-  width: 445px;
-}
-
-.content .right {
-  float: right;
-  width: 400px;
-}
-
-.content .right p, .content .right {
-  padding-bottom: 40px;
-}
-
-.content p {
-  padding-bottom: 20px;
-}
-
-.content textarea {
-  margin-bottom: 5px;
-}
-
-.content form, input.number {
-  margin-bottom: 20px;
-}
-
-p.cfp {
-  padding-top: 50px;
-}
-
-.telephone {
-  width: 300px;
-  margin: 0 auto;
-}
-
-.telephone form {
-  margin-bottom: 15px;
-}
-
-.form_result {
-  padding-bottom: 50px;
-}
-
-.map {
-  border: 3px solid rgb(255,255,255);
-  margin-bottom: 20px;
+#main h3 {
+  font-size: 18px;
+  line-height: 18px;
 }
 
 #speakers .subheader,
 #sponsors .subheader,
 #schedule .subheader,
-#love .subheader,
 #location .subheader,
 #hosts .subheader {
   border-bottom: 1px solid black;
@@ -208,7 +154,7 @@ p.cfp {
 #sponsors .subheader h1,
 #schedule .subheader h1,
 #location .subheader h1,
-#love .subheader h1 {
+#love h1 {
   color: #3097b1;
   font-size: 48px;
   text-align: left;
@@ -220,7 +166,7 @@ p.cfp {
   text-align: left;
 }
 
-#love .subheader h1 {
+#love h1 {
   color: #D03080;
   font-size: 24pt;
 }
@@ -255,6 +201,97 @@ p.cfp {
   color: rgb(175,175,175);
   font-style: italic;
   margin-bottom: 10px;
+}
+
+#date-tickets {
+  padding-top: 6px;
+}
+
+.action {
+  background: url(/img/textured-box-cutout.png) center bottom no-repeat;
+  color: #FFF;
+  height: 100px;
+  margin: 0 35px 10px 0;
+  text-align: center;
+  width: 500px;
+}
+
+#date-tickets h2 {
+  color: #056839;
+}
+
+#cfp {
+  padding: 20px 0 0 0;
+  width: 500px;
+}
+
+#cfp h1 a {
+  line-height: 0;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+
+#cfp h1 a:hover {
+  text-decoration: underline;
+}
+
+/* 2.1 Borders */
+
+#cfp,
+#proposals {
+  border-top: 2px solid #CCC;
+}
+
+/* 2.2 CFP / Proposals */
+
+#proposals #submit {
+  margin: 0 0 0 20px;
+}
+
+#proposals #submit div {
+  background: url(/img/textured-box-cutout.png) center bottom no-repeat;
+  display: inline-block;
+  font-family: 'Chivo', helvetica, serif;
+  font-weight: 700;
+  font-size: 36px;
+  height: 100px;
+  margin: 0 25px 0 0;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  width: 450px;
+}
+
+#proposals #submit div a {
+  display: block;
+  margin: 17px 0 0 0;
+}
+
+#proposals section h1,
+#proposals section h2 {
+  border-bottom: 2px solid #CCC;
+  margin: 0 0 10px 0;
+}
+
+#proposals section ul {
+  margin: 0 0 30px 30px;
+  list-style: circle;
+}
+
+#proposals h1 a {
+  text-decoration: underline;
+}
+
+#proposals .light-green {
+  color: #78ba51;
+}
+
+#proposals .dark-green {
+  color: #056839;
+}
+
+#proposals p {
+  margin: 0 0 20px 0;
 }
 
 /* 3. Modules
@@ -312,55 +349,6 @@ p.cfp {
 
 #page-nav li a:focus {
 	outline: none;
-}
-
-/* !3.2 Speakers */
-
-#action {
-  font-family: 'Chivo', helvetica, serif;
-  margin: 35px 35px 0 0;
-  text-align: center;
-  color: #FFF;
-  background: url(/img/textured-box-cutout.png) center bottom no-repeat;
-  width: 500px;
-  height: 100px;
-  margin-bottom: 30px;
-}
-
-#action h1 {
-  padding-top: 30px;
-  color: #FFF;
-  font-size: 40px;
-}
-
-#action h2 {
-  color: #056839;
-  padding-top: 20px;
-  font-size: 24px;
-}
-
-#call-for div {
-  float: left;
-  width: 400px;
-}
-
-#information {
-  width: 70%;
-  margin: 0 auto;
-  clear: both;
-}
-
-#action a {
-  color: #D03080;
-  padding-bottom: 8px;
-  text-decoration: underline;
-}
-
-#call-for {
-  color: #BFBFBF;
-  width: 900px;
-  margin: 0 auto;
-  height: 100px;
 }
 
 /* !3.2 Speakers */
