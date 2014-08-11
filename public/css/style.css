@@ -244,10 +244,38 @@ a:hover.button {
 
 /* 2.2 CFP / Proposals */
 
+#proposals #submit {
+  margin: 0 0 0 20px;
+}
+
+#proposals #submit div {
+  background: url(/img/textured-box-cutout.png) center bottom no-repeat;
+  display: inline-block;
+  font-family: 'Chivo', helvetica, serif;
+  font-weight: 700;
+  font-size: 36px;
+  height: 100px;
+  margin: 0 25px 0 0;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  width: 450px;
+}
+
+#proposals #submit div a {
+  display: block;
+  margin: 17px 0 0 0;
+}
+
 #proposals section h1,
 #proposals section h2 {
   border-bottom: 2px solid #CCC;
   margin: 0 0 10px 0;
+}
+
+#proposals section ul {
+  margin: 0 0 30px 30px;
+  list-style: circle;
 }
 
 #proposals h1 a {
