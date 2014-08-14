@@ -76,6 +76,25 @@ a:hover.button {
   top: -20px;
 }
 
+.empire-state-background {
+  display: block;
+  position: relative;
+}
+
+.empire-state-background::after {
+  background: url(/img/empire-state-cutout.png);
+  background-repeat: no-repeat;
+  background-position: 65% bottom;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.5;
+  content: "";
+}
+
 #empire-node {
   margin-bottom: 20px;
 }
