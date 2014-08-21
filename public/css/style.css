@@ -261,6 +261,62 @@ a:hover.button {
   border-top: 2px solid #CCC;
 }
 
+#synopsis {
+  padding: 20px 0 0 0;
+  width: 500px;
+  text-transform: none;
+}
+
+#synopsis h1 a {
+  line-height: 0;
+  padding-bottom: 8px;
+  cursor: pointer;
+  text-transform: none;
+}
+
+#synopsis h1 a:hover {
+  text-decoration: underline;
+  text-transform: none;
+}
+
+#synopsis h2 {
+  font-weight: 300;
+  font-style: italic;
+  padding-bottom: 12px;
+  cursor: pointer;
+  text-transform: none;
+}
+
+#synopsis h3 {
+  font-weight: 100;
+  font-size: 30;
+  padding-top: 5px; 
+  padding-bottom: 12px;
+  line-height: 120%;
+  text-transform: none;
+}
+
+#synopsis h3 a {
+  color: #78ba51; 
+  font-weight: 100;
+  font-size: 30;
+  padding-top: 5px; 
+  padding-bottom: 12px;
+  line-height: 120%;
+  text-transform: none;
+}
+
+#synopsis h3 a:hover {
+  text-decoration: underline;
+  color: #78ba51; 
+  font-weight: 100;
+  font-size: 30;
+  padding-top: 5px; 
+  padding-bottom: 12px;
+  line-height: 120%;
+  text-transform: none;
+}
+
 /* 2.2 CFP / Proposals */
 
 #proposals #submit {
