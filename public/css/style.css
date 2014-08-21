@@ -70,10 +70,24 @@ a:hover.button {
   padding-top: 25px;
 }
 
-#empire-state {
+.empire-state {
+  display: block;
+  position: relative;
+  height: 900px;
+}
+
+.empire-state::after {
+  background: url(/img/empire-state-cutout.png);
+  background-repeat: no-repeat;
+  background-position: 65% top;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   position: absolute;
-  left: 420px;
-  top: -20px;
+  z-index: -1;
+  opacity: 1;
+  content: "";
 }
 
 .empire-state-background {
@@ -259,6 +273,62 @@ a:hover.button {
 #cfp,
 #proposals {
   border-top: 2px solid #CCC;
+}
+
+#synopsis {
+  padding: 20px 0 0 0;
+  width: 500px;
+  text-transform: none;
+}
+
+#synopsis h1 a {
+  line-height: 0;
+  padding-bottom: 8px;
+  cursor: pointer;
+  text-transform: none;
+}
+
+#synopsis h1 a:hover {
+  text-decoration: underline;
+  text-transform: none;
+}
+
+#synopsis h2 {
+  font-weight: 300;
+  font-style: italic;
+  padding-bottom: 12px;
+  cursor: pointer;
+  text-transform: none;
+}
+
+#synopsis h3 {
+  font-weight: 100;
+  font-size: 30;
+  padding-top: 5px;
+  padding-bottom: 12px;
+  line-height: 120%;
+  text-transform: none;
+}
+
+#synopsis h3 a {
+  color: #78ba51;
+  font-weight: 100;
+  font-size: 30;
+  padding-top: 5px;
+  padding-bottom: 12px;
+  line-height: 120%;
+  text-transform: none;
+}
+
+#synopsis h3 a:hover {
+  text-decoration: underline;
+  color: #78ba51;
+  font-weight: 100;
+  font-size: 30;
+  padding-top: 5px;
+  padding-bottom: 12px;
+  line-height: 120%;
+  text-transform: none;
 }
 
 /* 2.2 CFP / Proposals */
