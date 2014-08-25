@@ -218,6 +218,18 @@ a:hover.button {
   color: #d65357;
 }
 
+#sponsor-list {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 375px;
+}
+
+#sponsor-list a {
+  display: inline-block;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
 #location .location05,
 #location .cruise,
 #location .lightbox {
@@ -687,14 +699,4 @@ a:hover.button {
 
 .contacts a:hover {
   text-decoration: underline;
-}
-
-.sponsors {
-  text-align: center;
-}
-
-.sponsors a {
-  display: inline-block;
-  margin: 0 auto;
-  padding-bottom: 40px;
 }
