@@ -170,6 +170,12 @@ a:hover.button {
   line-height: 18px;
 }
 
+#sponsors {
+  margin-top: 165px;
+  border-top: 2px solid #999;
+  padding-top: 20px;
+}
+
 #speakers .subheader,
 #sponsors .subheader,
 #schedule .subheader,
@@ -210,6 +216,18 @@ a:hover.button {
 
 #schedule .subheader h1 {
   color: #d65357;
+}
+
+#sponsor-list {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 375px;
+}
+
+#sponsor-list a {
+  display: inline-block;
+  margin: 0 auto;
+  padding-bottom: 40px;
 }
 
 #location .location05,
@@ -681,14 +699,4 @@ a:hover.button {
 
 .contacts a:hover {
   text-decoration: underline;
-}
-
-.sponsors {
-  text-align: center;
-}
-
-.sponsors a {
-  display: inline-block;
-  margin: 0 auto;
-  padding-bottom: 40px;
 }
