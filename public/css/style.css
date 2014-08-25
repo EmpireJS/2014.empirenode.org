@@ -170,6 +170,12 @@ a:hover.button {
   line-height: 18px;
 }
 
+#sponsors {
+  margin-top: 165px;
+  border-top: 2px solid #999;
+  padding-top: 20px;
+}
+
 #speakers .subheader,
 #sponsors .subheader,
 #schedule .subheader,
