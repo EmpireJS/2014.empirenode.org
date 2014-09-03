@@ -172,10 +172,19 @@ a:hover.button {
 
 #sponsors,
 #organizers,
-#speakers {
-  margin-top: 80px;
+#speakers,
+#love {
+  margin-top: 50px;
   border-top: 2px solid #999;
   padding-top: 20px;
+}
+
+#love {
+  border-top: 2px solid #333;
+  color: #666;
+  margin: 40px 0 20px 0;
+  font-size: 12px;
+  padding: 10px 0 0 10px;
 }
 
 #speakers .subheader,
@@ -459,7 +468,7 @@ a:hover.button {
 }
 
 #speakers {
-  margin-top: 200px;
+  margin-top: 165px;
 }
 
 #speakers .speakers,
@@ -480,6 +489,20 @@ a:hover.button {
   text-align: center;
   margin-left: 40px;
   color: #999;
+}
+
+section.more-speakers  {
+  color: #EFEFEF;
+  font-size: 36px;
+  font-weight: 400;
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+
+section.more-speakers span {
+  color: #78ba51;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .organizers div {
