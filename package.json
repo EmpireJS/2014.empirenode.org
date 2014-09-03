@@ -19,7 +19,7 @@
     "union": "0.3.8"
   },
   "scripts": {
-    "start": "./server.js"
+    "start": "node server.js"
   },
   "subdomain": "empirenode-2014",
   "engines": {
