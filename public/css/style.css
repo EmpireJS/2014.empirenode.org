@@ -1,13 +1,12 @@
 /* 1. Base Rules
 ------------------------------------------------------------------ */
-
 body {
   background: #000;
 }
 
 body, h1, h2, h3, h4 {
   font-family: 'Open Sans', sans-serif;
-  color: rgb(24, 24, 24);
+  /*color: rgb(24, 24, 24);*/
 }
 
 p { padding: 0 }
@@ -43,6 +42,14 @@ section {
   position: absolute;
   top: 530px;
   right: 1px;
+}
+
+.speaker {
+  padding: 30px;
+}
+
+.organizer {
+  margin: 15px;
 }
 
 a.button {
@@ -110,7 +117,16 @@ a:hover.button {
 }
 
 #empire-node {
+  height: 127px;
   margin-bottom: 20px;
+  width:1135px; 
+}
+
+@media (max-width: 600px) {
+  #empire-node {
+    height: 65px;
+    width:500px; 
+  }
 }
 
 #logo-background {
@@ -142,7 +158,7 @@ a:hover.button {
   font-size: 18px;
   margin: 5px auto 0 auto;
   padding: 15px 0px 12px 10px;
-  width: 991px;
+  /*width: 991px;*/
 }
 
 #main h1, #main h2, #main h3 {
@@ -187,29 +203,39 @@ a:hover.button {
   padding: 10px 0 0 10px;
 }
 
+#organizers .subheader,
 #speakers .subheader,
 #sponsors .subheader,
 #schedule .subheader,
 #location .subheader,
 #organizers .subheader {
   border-bottom: 1px solid black;
+  color: white;
   display: block;
   height: 40px;
   margin: 0 0 20px 0;
   padding: 0 0 0 10px;
+  text-align: center;
   width: 100%;
 }
 
-#speakers .subheader h2,
-#sponsors .subheader h2,
-#schedule .subheader h2,
-#location .subheader h2,
-#organizers .subheader h2 {
-  color: #fff;
-  text-align: left;
+#speakers .subheader h1,
+#sponsors .subheader h1,
+#schedule .subheader h1,
+#location .subheader h1,
+#love h1 {
+  color: #3097b1;
+  font-size: 48px;
+  text-align: center;
 }
 
-#sponsors .subheader h2 {
+#hosts .subheader h1 {
+  color: #f8d15f;
+  font-size: 48px;
+  text-align: center;
+}
+
+#sponsors .subheader h2, #organizers .subheader {
   color: #b4d183;
 }
 
@@ -224,7 +250,7 @@ a:hover.button {
 }
 
 #sponsor-list a {
-  display: inline-block;
+  display: block;
   margin: 0 auto;
   padding-bottom: 40px;
 }
@@ -261,9 +287,10 @@ a:hover.button {
   background: url(/img/textured-box-cutout.png) center bottom no-repeat;
   color: #FFF;
   height: 100px;
-  margin: 0 35px 10px 0;
+  margin-bottom: 25px;
+  margin-top: 25px;
   text-align: center;
-  width: 500px;
+  min-width: 500px;
 }
 
 #date-tickets h2 {
@@ -271,8 +298,7 @@ a:hover.button {
 }
 
 #cfp {
-  padding: 20px 0 0 0;
-  width: 500px;
+  padding: 30px 0 0 0;
 }
 
 #cfp h1 a {
@@ -292,9 +318,20 @@ a:hover.button {
   border-top: 2px solid #CCC;
 }
 
+#synopsis-left {
+  margin-left: 50%;
+}
+
+#synopsis-right {
+  margin-right: 50%;
+}
+
 #synopsis {
+  margin: auto;
   padding: 20px 0 0 0;
-  width: 500px;
+  max-width: 400px;
+  max-width: 600px;
+  text-align: justify;
   text-transform: none;
 }
 
@@ -463,12 +500,13 @@ a:hover.button {
   clear: both;
   max-width: 900px;
   margin: auto;
+  margin-top: 40px;
   text-align: justify;
   color: #AEAEAE;
 }
 
 #speakers {
-  margin-top: 165px;
+  margin-top: 50px;
 }
 
 #speakers .speakers,
@@ -476,11 +514,31 @@ a:hover.button {
   text-align: center;
 }
 
+@media (max-width: 600px) {
+  #speakers .speakers {
+    margin-top: 100px;
+  }
+}
+
+.hosts {
+  max-width: 450px;
+}
+
 #speakers .subheader h1,
 #organizers .subheader h1,
 #speakers .subheader h2,
-#organizers .subheader h2 {
-  padding-bottom: 20px;
+#organizers .subheader h2,
+section.more-speakers  {
+  color: #EFEFEF;
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+
+section.more-speakers {
+  margin-bottom: 0px;
 }
 
 .speakers div,
@@ -488,16 +546,10 @@ a:hover.button {
   display: inline-block;
   text-align: center;
   margin-left: 40px;
-  color: #999;
+  /*color: #999;*/
 }
 
-section.more-speakers  {
-  color: #EFEFEF;
-  font-size: 36px;
-  font-weight: 400;
-  margin-top: 50px;
-  text-transform: uppercase;
-}
+
 
 section.more-speakers span {
   color: #78ba51;
@@ -518,11 +570,6 @@ section.more-speakers span {
   moz-box-shadow: 1px 1px 6px black;
   webkit-box-shadow: 1px 1px 6px black;
   margin-bottom: 5px;
-}
-
-.organizers img {
-  width: 120px;
-  height: 120px;
 }
 
 .speakers:after,
@@ -679,3 +726,63 @@ section.more-speakers span {
 
 .location { text-align: center; }
 .location iframe { }
+
+.contacts, .sponsors {
+  clear: both;
+  max-width: 375px;
+  font-size: 11px;
+  margin: 30px auto 0;
+  text-align: justify;
+  color: #AEAEAE;
+}
+
+.contacts h1, .sponsors h1 {
+  padding-bottom: 20px;
+  font-family: 'Chivo', helvetica, serif;
+  text-align: center;
+  font-size: 28px;
+}
+
+.contacts p {
+  padding-bottom: 0 !important;
+}
+
+.contacts h2 {
+  padding-bottom: 10px;
+}
+
+.contacts div {
+  display: inline-block;
+  text-align: center;
+}
+
+.contacts img.avatar {
+  box-shadow: 1px 1px 4px black;
+  moz-box-shadow: 1px 1px 4px black;
+  webkit-box-shadow: 1px 1px 4px black;
+  margin-bottom: 5px;
+}
+
+.contacts:after {
+  content: '';
+  width: 100%;
+  display: inline-block;
+}
+
+.contacts a img {
+  display: inline;
+  opacity: 0.2;
+}
+
+.contacts a:hover {
+  text-decoration: underline;
+}
+
+#organizers {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#interested {
+  text-align: center;
+}

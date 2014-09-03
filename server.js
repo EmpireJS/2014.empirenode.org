@@ -36,3 +36,5 @@ var server = union.createServer({
 });
 
 server.listen(8080);
+
+console.log('server started on ' + 8080);
