@@ -44,8 +44,12 @@ section {
   right: 1px;
 }
 
-.speaker, .organizer {
+.speaker {
   padding: 30px;
+}
+
+.organizer {
+  margin: 15px;
 }
 
 a.button {
@@ -132,7 +136,7 @@ a:hover.button {
   background: url(/img/empire-state-cutout.png) center bottom no-repeat;
 }
 
-#welcome, #action, #why, #contacts {
+#welcome, #action, #why {
   margin-bottom: 10px;
 }
 
@@ -182,10 +186,21 @@ a:hover.button {
   line-height: 18px;
 }
 
-#sponsors {
-  margin-top: 80px;
+#sponsors,
+#organizers,
+#speakers,
+#love {
+  margin-top: 50px;
   border-top: 2px solid #999;
   padding-top: 20px;
+}
+
+#love {
+  border-top: 2px solid #333;
+  color: #666;
+  margin: 40px 0 20px 0;
+  font-size: 12px;
+  padding: 10px 0 0 10px;
 }
 
 #organizers .subheader,
@@ -193,7 +208,7 @@ a:hover.button {
 #sponsors .subheader,
 #schedule .subheader,
 #location .subheader,
-#hosts .subheader {
+#organizers .subheader {
   border-bottom: 1px solid black;
   color: white;
   display: block;
@@ -220,16 +235,11 @@ a:hover.button {
   text-align: center;
 }
 
-#love h1 {
-  color: #D03080;
-  font-size: 24pt;
-}
-
-#sponsors .subheader h1 {
+#sponsors .subheader h2, #organizers .subheader {
   color: #b4d183;
 }
 
-#schedule .subheader h1 {
+#schedule .subheader h2 {
   color: #d65357;
 }
 
@@ -240,7 +250,7 @@ a:hover.button {
 }
 
 #sponsor-list a {
-  display: inline-block;
+  display: block;
   margin: 0 auto;
   padding-bottom: 40px;
 }
@@ -484,12 +494,13 @@ a:hover.button {
 	outline: none;
 }
 
-/* !3.2 Speakers */
+/* !3.2 Speakers / Organizers */
 
 .speakers {
   clear: both;
   max-width: 900px;
   margin: auto;
+  margin-top: 40px;
   text-align: justify;
   color: #AEAEAE;
 }
@@ -498,7 +509,8 @@ a:hover.button {
   margin-top: 50px;
 }
 
-#speakers .speakers {
+#speakers .speakers,
+#organizers .organizers {
   text-align: center;
 }
 
@@ -507,30 +519,51 @@ a:hover.button {
     margin-top: 100px;
   }
 }
-@media
 
 .hosts {
   max-width: 450px;
 }
 
-.speakers h1 {
-  padding-bottom: 10px;
+#speakers .subheader h1,
+#organizers .subheader h1,
+#speakers .subheader h2,
+#organizers .subheader h2,
+section.more-speakers  {
+  color: #EFEFEF;
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  text-transform: uppercase;
 }
 
-.speakers p {
-  padding-bottom: 0 !important;
+section.more-speakers {
+  margin-bottom: 0px;
 }
 
-.speakers h2 {
-  padding-bottom: 10px;
-}
-
-.speakers div {
+.speakers div,
+.organizers div {
   display: inline-block;
   text-align: center;
+  margin-left: 40px;
+  /*color: #999;*/
 }
 
-.speakers img {
+
+
+section.more-speakers span {
+  color: #78ba51;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.organizers div {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.speakers img,
+.organizers img {
   width: 200px;
   height: 200px;
   box-shadow: 1px 1px 6px black;
@@ -539,16 +572,14 @@ a:hover.button {
   margin-bottom: 5px;
 }
 
-.speakers.organizers img {
-  width: 170px;
-  height: 170px;
-}
-
-.speakers:after {
+.speakers:after,
+.organizers:after {
   content: '';
   width: 100%;
   display: inline-block;
 }
+
+/* !3.3 Schedule */
 
 .schedule {
   margin: 0 auto;
@@ -749,5 +780,9 @@ a:hover.button {
 
 #organizers {
   margin-top: 30px;
+  text-align: center;
+}
+
+#interested {
   text-align: center;
 }
