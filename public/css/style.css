@@ -1,13 +1,12 @@
 /* 1. Base Rules
 ------------------------------------------------------------------ */
-
 body {
   background: #000;
 }
 
 body, h1, h2, h3, h4 {
   font-family: 'Open Sans', sans-serif;
-  color: rgb(24, 24, 24);
+  /*color: rgb(24, 24, 24);*/
 }
 
 p { padding: 0 }
@@ -43,6 +42,10 @@ section {
   position: absolute;
   top: 530px;
   right: 1px;
+}
+
+.speaker, .organizer {
+  padding: 30px;
 }
 
 a.button {
@@ -110,7 +113,16 @@ a:hover.button {
 }
 
 #empire-node {
+  height: 127px;
   margin-bottom: 20px;
+  width:1135px; 
+}
+
+@media (max-width: 600px) {
+  #empire-node {
+    height: 65px;
+    width:500px; 
+  }
 }
 
 #logo-background {
@@ -142,7 +154,7 @@ a:hover.button {
   font-size: 18px;
   margin: 5px auto 0 auto;
   padding: 15px 0px 12px 10px;
-  width: 991px;
+  /*width: 991px;*/
 }
 
 #main h1, #main h2, #main h3 {
@@ -176,16 +188,19 @@ a:hover.button {
   padding-top: 20px;
 }
 
+#organizers .subheader,
 #speakers .subheader,
 #sponsors .subheader,
 #schedule .subheader,
 #location .subheader,
 #hosts .subheader {
   border-bottom: 1px solid black;
+  color: white;
   display: block;
   height: 40px;
   margin: 0 0 20px 0;
   padding: 0 0 0 10px;
+  text-align: center;
   width: 100%;
 }
 
@@ -196,13 +211,13 @@ a:hover.button {
 #love h1 {
   color: #3097b1;
   font-size: 48px;
-  text-align: left;
+  text-align: center;
 }
 
 #hosts .subheader h1 {
   color: #f8d15f;
   font-size: 48px;
-  text-align: left;
+  text-align: center;
 }
 
 #love h1 {
@@ -262,9 +277,10 @@ a:hover.button {
   background: url(/img/textured-box-cutout.png) center bottom no-repeat;
   color: #FFF;
   height: 100px;
-  margin: 0 35px 10px 0;
+  margin-bottom: 25px;
+  margin-top: 25px;
   text-align: center;
-  width: 500px;
+  min-width: 500px;
 }
 
 #date-tickets h2 {
@@ -272,8 +288,7 @@ a:hover.button {
 }
 
 #cfp {
-  padding: 20px 0 0 0;
-  width: 500px;
+  padding: 30px 0 0 0;
 }
 
 #cfp h1 a {
@@ -293,9 +308,20 @@ a:hover.button {
   border-top: 2px solid #CCC;
 }
 
+#synopsis-left {
+  margin-left: 50%;
+}
+
+#synopsis-right {
+  margin-right: 50%;
+}
+
 #synopsis {
+  margin: auto;
   padding: 20px 0 0 0;
-  width: 500px;
+  max-width: 400px;
+  max-width: 600px;
+  text-align: justify;
   text-transform: none;
 }
 
@@ -469,12 +495,19 @@ a:hover.button {
 }
 
 #speakers {
-  margin-top: 200px;
+  margin-top: 50px;
 }
 
 #speakers .speakers {
   text-align: center;
 }
+
+@media (max-width: 600px) {
+  #speakers .speakers {
+    margin-top: 100px;
+  }
+}
+@media
 
 .hosts {
   max-width: 450px;
@@ -715,5 +748,6 @@ a:hover.button {
 }
 
 #organizers {
-  margin-top: 80px;
+  margin-top: 30px;
+  text-align: center;
 }

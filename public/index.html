@@ -6,19 +6,21 @@
     <meta name="description" content="One-day. One-track. Late October in New York City. All Node.js everything. Tickets on-sale Soon!">
     <meta name="viewport" content="width=device-width">
     <meta name="google-site-verification" content="B7uTd8p2GMErJIaMRa8PmwpRa2rVvUA2YCXqOH4fJIU" />
-    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" href="/img/favicon.ico" />
     <script src="js/modernizr-2.5.3.min.js"></script>
     <script src="js/jquery-1.6.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.scrollTo-1.4.3.1.min.js"></script>
     <script type="text/javascript" src="js/director-1.1.6.min.js"></script>
 </head>
 <body>
-  <div id="container">
-    <div id="main" itemscope itemtype="http://schema.org/Event" class="empire-state">
+  <div class="container">
+    <div class="row" id="main" itemscope itemtype="http://schema.org/Event" class="empire-state">
+      
       <div id="welcome">
-        <img id="empire-node" width="1024px" src="/img/empire-node-cutout.png" />
+        <img id="empire-node"  src="/img/empire-node-cutout.png"/>
         <a href="https://ti.to/empirejs/empirenode-2014">
           <div class="action">
             <div id="date-tickets">
@@ -33,8 +35,11 @@
         </div>
       </div>
 
-      <div id="synopsis">
-        <h2>The newest Node.js conference from your friends at EmpireJS</h2>
+      <div class="row">
+       
+       <div id="synopsis-left"></div>
+       <div id="synopsis">
+          <h2>The newest Node.js conference from your friends at EmpireJS</h2>
         <h3>EmpireNode is a community-run single-day, single-track format
 with a twist &mdash; taking place at Location 05 in NYC on October 27th, 2014. The
 morning will be action-packed 20-25 minute talks covering the range of all
@@ -48,9 +53,11 @@ yutz'</a>, and try and make our fellow Empire friends feel welcome! Diversity
 of voices is important to our community, and we are serious when we say
 EVERYONE AND ANYONE should attend and participate.
         </h3>
+       </div>
+       <div id="synopsis-right"></div>
       </div>
 
-      <div id="speakers" class="content">
+      <div class="row" id="speakers" >
         <div class="subheader">
           <h1>Speakers &amp; Workshop Runners</h1>
         </div>
@@ -59,20 +66,20 @@ EVERYONE AND ANYONE should attend and participate.
 
           <div>
             <a href="https://github.com/indutny" target="_blank">
-              <img src="/img/speakers/indutny_fedor.jpg" alt /><p>Fedor Indutny</p>
+              <img class="speaker" src="/img/speakers/indutny_fedor.jpg" alt /><p>Fedor Indutny</p>
             </a>
           </div>
 
           <div>
             <a href="https://github.com/rwaldron" target="_blank">
-              <img src="/img/speakers/waldron_rick.jpeg" alt /><p>Rick Waldron</p>
+              <img class="speaker" src="/img/speakers/waldron_rick.jpeg" alt /><p>Rick Waldron</p>
             </a>
           </div>
 
         </div>
       </div>
 
-      <div id="organizers" class="content">
+      <div class="row" id="organizers" class="content">
         <div class="subheader">
           <h1>Organized by</h1>
         </div>
@@ -80,37 +87,36 @@ EVERYONE AND ANYONE should attend and participate.
         <div class="speakers organizers">
           <div>
             <a href="https://twitter.com/indexzero" target="_blank">
-              <img src="/img/organizers/charlie.jpeg" alt /><p>Charlie Robbins</p>
+              <img class="organizer" src="/img/organizers/charlie.jpeg" alt /><p>Charlie Robbins</p>
             </a>
           </div>
           <div>
             <a href="https://twitter.com/LopezCatherine" target="_blank">
-              <img src="/img/organizers/catherine.jpeg" alt /><p>Catherine Lopez</p>
+              <img class="organizer" src="/img/organizers/catherine.jpeg" alt /><p>Catherine Lopez</p>
             </a>
           </div>
           <div>
             <a href="https://twitter.com/mateodelnorte" target="_blank">
-              <img src="/img/organizers/matt.png" alt /><p>Matt Walters</p>
+              <img class="organizer" src="/img/organizers/matt.png" alt /><p>Matt Walters</p>
             </a>
           </div>
           <div>
             <a href="https://twitter.com/HackyGoLucky" target="_blank">
-              <img src="/img/organizers/tracy.jpeg" alt /><p>Tracy Hinds</p>
+              <img class="organizer" src="/img/organizers/tracy.jpeg" alt /><p>Tracy Hinds</p>
             </a>
           </div>
 
           <div>
             <a href="https://twitter.com/_chrisabrams_" target="_blank">
-              <img src="/img/organizers/chris.jpeg" alt /><p>Chris Abrams</p>
+              <img class="organizer" src="/img/organizers/chris.jpeg" alt /><p>Chris Abrams</p>
             </a>
           </div>
         </div>
       </div>
 
-      <div id="sponsors">
+      <div class="row" id="sponsors">
         <div class="subheader">
           <h2>Sponsorship by</h2>
-          <h4>Interested in sponsoring? <a href="mailto:sponsors@empirenode.org">Email us!</a></h4>
         </div>
 
         <div id="sponsor-list">
@@ -120,6 +126,12 @@ EVERYONE AND ANYONE should attend and participate.
           <a href="http://digitalocean.com" target="_blank">
             <img src="/img/sponsors/digitalocean.png" width="400" />
           </a>
+        </div>
+
+        <div class="subheader">
+          <h2>Interested in sponsoring? 
+            <a href="mailto:sponsors@empirenode.org">Email us!</a>
+          </h2>
         </div>
       </div>
 
