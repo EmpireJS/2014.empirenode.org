@@ -70,6 +70,10 @@ a:hover.button {
   padding-top: 25px;
 }
 
+#twitter-bird {
+  margin-top: -10px;
+}
+
 .empire-state {
   display: block;
   position: relative;
@@ -140,7 +144,7 @@ a:hover.button {
   color: #fff;
   position: relative;
   font-size: 18px;
-  margin: 5px auto 0 auto;
+  margin: 30px auto 0 auto;
   padding: 15px 0px 12px 10px;
   width: 991px;
 }
@@ -406,7 +410,8 @@ a:hover.button {
 /* !3.1 Nav */
 
 #page-nav {
-	background-color: #FFF;
+  background-color: #000;
+	color: #FFF;
   height: 60px;
   width: 100%;
   position: fixed;
