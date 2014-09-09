@@ -217,10 +217,6 @@ a:hover.button {
   color: #b4d183;
 }
 
-#schedule .subheader h2 {
-  color: #d65357;
-}
-
 #sponsor-list {
   text-align: center;
   margin: 0 auto;
@@ -588,7 +584,7 @@ section.more-speakers span {
 }
 .schedule table tr.breakfast {
   background-color: #FFFDF7;
-  color: #f8d15f;
+  color: #78ba51;
 }
 .schedule table td registration::after {
   font-style: normal;
@@ -610,7 +606,7 @@ section.more-speakers span {
   font-size: 18px;
 }
 .schedule table tr.coffee {
-  background-color: #FFF8F2;
+  background-color: #FCFFF7;
   color: #E7721F;
 }
 .schedule table td coffee::after {
@@ -625,21 +621,21 @@ section.more-speakers span {
 .schedule table td img {
   float: left;
   width: 35px;
-  margin: 6px 6px 0px 0px;
+  margin: 6px 20px 0px 0px;
 }
 .schedule table td speaker > a {
-  color: #D03080;
+  color: #78ba51;
   text-decoration: underline;
 }
 .schedule table tr.party {
   background-color: #F7FDFF;
   color: #2496b2;
-}
+}/*
 .schedule table td cruise::after {
   font-style: normal;
   content: 'Statue of Liberty Cruise';
   font-size: 18px;
-}
+}*/
 .schedule table td party::after {
   font-style: normal;
   content: 'Closing Party at LightBox';
@@ -647,12 +643,13 @@ section.more-speakers span {
 }
 
 .schedule table th {
+  color: #FFF;
   font-weight: bold;
   text-align: left;
   padding: 10px 0 10px 20px;
 }
 .schedule table tr:last-child {
-  color: #333;
+  color: #78ba51;
   font-style: italic;
   height: auto;
 }
