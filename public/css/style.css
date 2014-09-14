@@ -70,6 +70,10 @@ a:hover.button {
   padding-top: 25px;
 }
 
+#twitter-bird {
+  margin-top: -10px;
+}
+
 .empire-state {
   display: block;
   position: relative;
@@ -140,7 +144,7 @@ a:hover.button {
   color: #fff;
   position: relative;
   font-size: 18px;
-  margin: 5px auto 0 auto;
+  margin: 30px auto 0 auto;
   padding: 15px 0px 12px 10px;
   width: 991px;
 }
@@ -174,7 +178,7 @@ a:hover.button {
 #organizers,
 #speakers,
 #love {
-  margin-top: 50px;
+  margin-top: 25px;
   border-top: 2px solid #999;
   padding-top: 20px;
 }
@@ -192,7 +196,6 @@ a:hover.button {
 #schedule .subheader,
 #location .subheader,
 #organizers .subheader {
-  border-bottom: 1px solid black;
   display: block;
   height: 40px;
   margin: 0 0 20px 0;
@@ -209,7 +212,8 @@ a:hover.button {
   text-align: left;
 }
 
-#sponsors .subheader h2 {
+#sponsors .subheader h2,
+#sponsor-list h2 a {
   color: #b4d183;
 }
 
@@ -227,6 +231,14 @@ a:hover.button {
   display: inline-block;
   margin: 0 auto;
   padding-bottom: 40px;
+}
+
+#sponsor-list h2 {
+  margin-top: 25px;
+}
+
+#sponsor-list h2 a {
+  text-decoration: underline;
 }
 
 #location .location05,
@@ -406,7 +418,8 @@ a:hover.button {
 /* !3.1 Nav */
 
 #page-nav {
-	background-color: #FFF;
+  background-color: #000;
+	color: #FFF;
   height: 60px;
   width: 100%;
   position: fixed;

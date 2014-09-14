@@ -16,6 +16,20 @@
 </head>
 <body>
   <div id="container">
+
+    <nav id="page-nav" class="alt">
+      <div>
+        <ul>
+          <li><a href="/#/synopsis" title="Information">Information</a></li>
+          <li><a href="/#/speakers" title="Speakers">Speakers</a></li>
+          <li><a href="/#/sponsors" title="Sponsors">Sponsors</a></li>
+          <li><a href="https://ti.to/empirejs/empirenode-2014" title="Tickets" target="_blank">Tickets</a></li>
+          <li><a class="glyphicon-heart" href="/#/love" title="Contacts">&lt;3</a></li>
+          <li><a id="twitter-bird" href="https://twitter.com/empirenode" title="Twitter" style="padding-top:30px" target="_blank"><img src="/img/twitter.png" height="30px"></a></li>
+        </ul>
+      </div>
+    </nav>
+
     <div id="main" itemscope itemtype="http://schema.org/Event" class="empire-state">
       <div id="welcome">
         <img id="empire-node" width="1024px" src="/img/empire-node-cutout.png" />
@@ -83,7 +97,6 @@ EVERYONE AND ANYONE should attend and participate.
       <div id="sponsors">
         <div class="subheader">
           <h2>Sponsorship by</h2>
-          <h4>Interested in sponsoring? <a href="mailto:sponsors@empirenode.org">Email us!</a></h4>
         </div>
 
         <div id="sponsor-list">
@@ -93,6 +106,7 @@ EVERYONE AND ANYONE should attend and participate.
           <a href="http://digitalocean.com" target="_blank">
             <img src="/img/sponsors/digitalocean.png" width="400" />
           </a>
+          <h2>Interested in sponsoring? <a href="mailto:sponsors@empirenode.org">Email us!</a></h2>
         </div>
       </div>
 
@@ -140,6 +154,28 @@ EVERYONE AND ANYONE should attend and participate.
       <meta itemprop="endDate" content="2014-10-27">
       <meta itemprop="location" content="New York City">
     </div>
+
+    <script>
+      var run_route = function () {
+        var route = window.location.hash.slice(2)
+        $.scrollTo('#' + route, 500, {offset: -75})
+      }
+
+      var routes = {
+        'welcome': run_route
+      , '/synopsis': run_route
+      , '/speakers': run_route
+      , '/videos': run_route
+      , '/sponsors': run_route
+      , '/love': run_route
+      , '/location': run_route
+      }
+
+      var router = Router(routes)
+
+      router.init()
+  </script>
+
   </div>
 </body>
 </html>
