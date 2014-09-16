@@ -176,7 +176,10 @@ a:hover.button {
 
 #sponsors,
 #organizers,
+#location,
+#accomodation,
 #speakers,
+#schedule,
 #love {
   margin-top: 25px;
   border-top: 2px solid #999;
@@ -195,6 +198,7 @@ a:hover.button {
 #sponsors .subheader,
 #schedule .subheader,
 #location .subheader,
+#accomodation .subheader,
 #organizers .subheader {
   display: block;
   height: 40px;
@@ -207,6 +211,7 @@ a:hover.button {
 #sponsors .subheader h2,
 #schedule .subheader h2,
 #location .subheader h2,
+#accomodation .subheader h2,
 #organizers .subheader h2 {
   color: #fff;
   text-align: left;
@@ -223,6 +228,10 @@ a:hover.button {
   max-width: 375px;
 }
 
+#accomodation a {
+  color: #b4d183;
+}
+
 #sponsor-list a {
   display: inline-block;
   margin: 0 auto;
@@ -237,8 +246,13 @@ a:hover.button {
   text-decoration: underline;
 }
 
+.yotel-logo {
+  margin-bottom: 30px;
+}
+
 #location .location05,
-#location .cruise,
+#location .map,
+#location .yotel,
 #location .lightbox {
   float: left;
   width: 30%;
@@ -259,6 +273,17 @@ a:hover.button {
   color: rgb(175,175,175);
   font-style: italic;
   margin-bottom: 10px;
+}
+
+#location {
+  margin-bottom: 35px;
+}
+
+#location .map {
+  border: #999 2px solid;
+  height: 205px;
+  padding: 3px;
+  width: 600px;
 }
 
 #date-tickets {
@@ -688,5 +713,8 @@ section.more-speakers span {
   font-size: 20px;
 }
 
-.location { text-align: center; }
+.location { 
+  height: 215px;
+  text-align: left; 
+}
 .location iframe { }
