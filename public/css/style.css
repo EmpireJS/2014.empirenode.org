@@ -278,6 +278,10 @@ a:hover.button {
   margin-bottom: 10px;
 }
 
+#location {
+  margin-bottom: 35px;
+}
+
 #location .map {
   border: #999 2px solid;
   height: 205px;
