@@ -231,6 +231,10 @@ a:hover.button {
   max-width: 375px;
 }
 
+#accomodation a {
+  color: #b4d183;
+}
+
 #sponsor-list a {
   display: inline-block;
   margin: 0 auto;
