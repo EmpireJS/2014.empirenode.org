@@ -502,7 +502,7 @@ a:hover.button {
 }
 
 #speakers {
-  margin-top: 165px;
+  margin-top: 293px;
 }
 
 #speakers .speakers,
@@ -713,8 +713,8 @@ section.more-speakers span {
   font-size: 20px;
 }
 
-.location { 
+.location {
   height: 215px;
-  text-align: left; 
+  text-align: left;
 }
 .location iframe { }
