@@ -178,7 +178,7 @@ a:hover.button {
 #organizers,
 #speakers,
 #love {
-  margin-top: 50px;
+  margin-top: 25px;
   border-top: 2px solid #999;
   padding-top: 20px;
 }
@@ -196,7 +196,6 @@ a:hover.button {
 #schedule .subheader,
 #location .subheader,
 #organizers .subheader {
-  border-bottom: 1px solid black;
   display: block;
   height: 40px;
   margin: 0 0 20px 0;
@@ -213,7 +212,8 @@ a:hover.button {
   text-align: left;
 }
 
-#sponsors .subheader h2 {
+#sponsors .subheader h2,
+#sponsor-list h2 a {
   color: #b4d183;
 }
 
@@ -227,6 +227,14 @@ a:hover.button {
   display: inline-block;
   margin: 0 auto;
   padding-bottom: 40px;
+}
+
+#sponsor-list h2 {
+  margin-top: 25px;
+}
+
+#sponsor-list h2 a {
+  text-decoration: underline;
 }
 
 #location .location05,
@@ -544,6 +552,7 @@ section.more-speakers span {
 }
 .schedule table {
   margin: 0 auto;
+  width: 100%;
 }
 .schedule table thead tr {
   color: #333;
@@ -651,7 +660,6 @@ section.more-speakers span {
 .schedule table tr:last-child {
   color: #78ba51;
   font-style: italic;
-  height: auto;
 }
 .schedule table tr:last-child td {
   border-bottom: 0px solid #FFF;
