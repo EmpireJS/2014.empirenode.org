@@ -575,7 +575,6 @@ section.more-speakers span {
 .schedule table tr.lunch td:first-child,
 .schedule table tr.coffee td:first-child,
 .schedule table tr.party td:first-child  {
-  color: rgb(24, 24, 24);
   font-size: 18px;
   font-style: normal;
 }
@@ -592,8 +591,9 @@ section.more-speakers span {
   font-weight: lighter;
 }
 .schedule table tr.breakfast {
-  background-color: #FFFDF7;
-  color: #78ba51;
+  background-color: #3D3D40;
+  border-top: 1px solid #CDCDCD;
+  color: #f8d15f;
 }
 .schedule table td registration::after {
   font-style: normal;
@@ -606,7 +606,7 @@ section.more-speakers span {
   font-size: 18px;
 }
 .schedule table tr.lunch {
-  background-color: #FCFFF7;
+  background-color: #3D3D40;
   color: #b2cf7e;
 }
 .schedule table td lunch::after {
@@ -615,7 +615,7 @@ section.more-speakers span {
   font-size: 18px;
 }
 .schedule table tr.coffee {
-  background-color: #FCFFF7;
+  background-color: #3D3D40;
   color: #E7721F;
 }
 .schedule table td coffee::after {
@@ -637,7 +637,8 @@ section.more-speakers span {
   text-decoration: underline;
 }
 .schedule table tr.party {
-  background-color: #F7FDFF;
+  background-color: #3D3D40;
+  border-bottom: 1px solid #CDCDCD;
   color: #2496b2;
 }/*
 .schedule table td cruise::after {
