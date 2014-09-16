@@ -648,6 +648,15 @@ section.more-speakers span {
   content: 'Coffee Break';
   font-size: 18px;
 }
+.schedule table tr.end {
+  background-color: #3D3D40;
+  color: #f8d15f;
+}
+.schedule table td end::after {
+  font-style: normal;
+  content: 'End of Talks & Workshops';
+  font-size: 18px;
+}
 .schedule table td speaker::before {
   content: '\A';
   white-space: pre;
