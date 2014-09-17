@@ -552,6 +552,7 @@ section.more-speakers span {
   moz-box-shadow: 1px 1px 6px black;
   webkit-box-shadow: 1px 1px 6px black;
   margin-bottom: 5px;
+  margin-top: 50px;
 }
 
 .organizers img {
