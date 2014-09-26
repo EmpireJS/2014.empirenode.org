@@ -178,6 +178,7 @@ a:hover.button {
 #organizers,
 #location,
 #accomodation,
+#preparty,
 #speakers,
 #schedule,
 #love {
@@ -199,6 +200,7 @@ a:hover.button {
 #schedule .subheader,
 #location .subheader,
 #accomodation .subheader,
+#preparty .subheader,
 #organizers .subheader {
   display: block;
   height: 40px;
@@ -212,6 +214,7 @@ a:hover.button {
 #schedule .subheader h2,
 #location .subheader h2,
 #accomodation .subheader h2,
+#preparty .subheader h2,
 #organizers .subheader h2 {
   color: #fff;
   text-align: left;
@@ -246,7 +249,7 @@ a:hover.button {
   text-decoration: underline;
 }
 
-.yotel-logo {
+.yotel-logo, .ucb-logo {
   margin-bottom: 30px;
 }
 
