@@ -213,6 +213,15 @@ a:hover.button {
   width: 100%;
 }
 
+#emcee img {
+  margin-left: 20px;
+  margin-top: 0px;
+}
+
+#emcee p {
+  margin-bottom: 0px;
+  height: 24px;
+}
 #speakers .subheader h2,
 #instructors .subheader h2,
 #sponsors .subheader h2,
