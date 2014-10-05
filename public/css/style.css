@@ -717,8 +717,16 @@ section.more-speakers span {
   padding: 10px 0 10px 20px;
 }
 .schedule table tr:last-child {
-  color: #78ba51;
-  font-style: italic;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+.schedule table tr:last-child h4 {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+}
+.schedule table tr:last-child p {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
 }
 .schedule table tr:last-child td {
   border-bottom: 0px solid #FFF;
