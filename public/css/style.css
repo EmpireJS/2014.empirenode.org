@@ -261,6 +261,14 @@ a:hover.button {
   vertical-align: middle;
 }
 
+#sponsor-list .sponsor-section.platinum a {
+  display: block;
+}
+
+#sponsor-list .sponsor-section.platinum a img {
+  margin: 0 auto;
+}
+
 #sponsor-list h2 {
   margin-top: 25px;
 }
