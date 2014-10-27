@@ -732,6 +732,15 @@ section.more-speakers span {
   content: 'End of Talks & Workshops';
   font-size: 18px;
 }
+.schedule table tr.dinner {
+  background-color: #3D3D40;
+  color: #f8d15f;
+}
+.schedule table td dinner::after {
+  font-style: normal;
+  content: 'Group Dinners!';
+  font-size: 18px;
+}
 .schedule table td speaker::before {
   content: '\A';
   white-space: pre;
