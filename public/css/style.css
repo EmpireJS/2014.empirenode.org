@@ -237,25 +237,39 @@ a:hover.button {
   text-align: left;
 }
 
+#accomodation a {
+  color: #b4d183;
+}
+
 #sponsors .subheader h2,
 #sponsor-list h2 a {
   color: #b4d183;
 }
 
 #sponsor-list {
+  margin: 0 auto;
   text-align: center;
+  width: 100%;
+}
+
+#sponsor-list .sponsor-section {
+  display: table;
   margin: 0 auto;
-  max-width: 375px;
+  width: 100%;
 }
 
-#accomodation a {
-  color: #b4d183;
-}
-
-#sponsor-list a {
+#sponsor-list .sponsor-section a {
   display: inline-block;
+  padding: 0 40px 40px 0;
+  vertical-align: middle;
+}
+
+#sponsor-list .sponsor-section.platinum a {
+  display: block;
+}
+
+#sponsor-list .sponsor-section.platinum a img {
   margin: 0 auto;
-  padding-bottom: 40px;
 }
 
 #sponsor-list h2 {
