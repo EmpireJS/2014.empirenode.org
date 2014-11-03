@@ -181,7 +181,7 @@ a:hover.button {
 #preparty,
 #speakers,
 #instructors,
-#schedule,
+#videos,
 #dinner,
 #love {
   margin-top: 25px;
@@ -200,7 +200,7 @@ a:hover.button {
 #speakers .subheader,
 #instructors .subheader,
 #sponsors .subheader,
-#schedule .subheader,
+#videos .subheader,
 #dinner .subheader,
 #location .subheader,
 #accomodation .subheader,
@@ -227,7 +227,7 @@ a:hover.button {
 #speakers .subheader h2,
 #instructors .subheader h2,
 #sponsors .subheader h2,
-#schedule .subheader h2,
+#videos .subheader h2,
 #dinner .subheader,
 #location .subheader h2,
 #accomodation .subheader h2,
@@ -665,6 +665,9 @@ section.more-speakers span {
 .schedule table tr td {
   padding: 10px 0 10px 20px;
   border-bottom: 1px solid #CDCDCD;
+}
+.schedule table tr td iframe {
+  display: block;
 }
 .schedule table tr.break td a {
   font-size: 14px;
