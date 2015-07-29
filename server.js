@@ -1,7 +1,7 @@
 var union    = require('union'),
     ecstatic = require('ecstatic');
 
-var is2014 = /2015\./;
+var is2015 = /2015\./;
 
 //
 // ### redirect(res)
