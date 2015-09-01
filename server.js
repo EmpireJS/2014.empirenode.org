@@ -1,7 +1,7 @@
 var union    = require('union'),
     ecstatic = require('ecstatic');
 
-var is2015 = /2015\./;
+var port = process.env.PORT || 8080;
 
 //
 // ### redirect(res)
@@ -18,8 +18,12 @@ function redirect(res) {
 var server = union.createServer({
   before: [
     function (req, res) {
-      var host = req.headers.host;
-      if (process.env.NODE_ENV === 'production' && !is2015.test(host)) {
+      var host = req.headers.host,
+          parts = host.split('.');
+
+      console.log('%s - %s%s', req.method, host, req.url);
+      if (process.env.NODE_ENV === 'production'
+        && (parts.length !== 3 || parts[0] === 'www')) {
         return redirect(res);
       }
 
@@ -35,4 +39,6 @@ var server = union.createServer({
   ]
 });
 
-server.listen(8080);
+server.listen(port, function () {
+  console.log('Listening on %s', port);
+});
