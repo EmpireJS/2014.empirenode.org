@@ -18,7 +18,7 @@ function redirect(res) {
 var server = union.createServer({
   before: [
     function (req, res) {
-      var host = req.headers.host,
+      var host = req.headers.host || '',
           parts = host.split('.');
 
       console.log('%s - %s%s', req.method, host, req.url);
